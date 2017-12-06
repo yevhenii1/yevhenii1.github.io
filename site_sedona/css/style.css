@@ -987,11 +987,13 @@ input[type="radio"] {
 @media (min-width: 1200px) {
   .container {
     width: 93.75%;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }
   .intro-common__container {
     width: 93.75%;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1007,6 +1009,7 @@ input[type="radio"] {
   }
   .features__container {
     width: 93.75%;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }
