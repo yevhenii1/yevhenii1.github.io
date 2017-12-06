@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <div class="container">
   <header class="page-header">
     <div class="page-header__container">
       <nav class="main-nav main-nav--closed">
@@ -17,10 +18,10 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--active "><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма Отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item disabled"><a href="#">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="#">Форма Отзыва</a></li>
+            <li class="main-nav__item disabled"><a href="#">HTML</a></li>
             <li class="main-nav__item main-nav__item--logo">
               <a href="index.html" class="main-nav__logo">
                 <picture>
@@ -48,153 +49,156 @@
       </div>
     </div>
   </header>
+  <div class="container-form">
      <form action="#" class="form" method="post">
-       <section class="form__section">
-         <div class="form__container">
-           <fieldset class="form__fieldset">
-             <legend class="form__heading form__heading--legend">
-               Представьтесь <span class="form__heading--mark">, пожалуйста</span>:
-             </legend>
-               <div class="form__group">
-                 <label for="name" class="form__title">
-                   Имя:
-                 </label>
-                 <div class="form__group--inner">
-                   <input type="text" id="name" class="form__input" name="name" placeholder="Петр" required="" >
+
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset">
+               <legend class="form__heading ">
+                 Представьтесь <span class="form__heading--mark">, пожалуйста</span>:
+               </legend>
+                 <div class="form__group indent">
+                   <label for="name" class="form__title">
+                     Имя:
+                   </label>
+                   <div class="form__group--inner">
+                     <input type="text" id="name" class="form__input" name="name" placeholder="Петр" required="" >
+                   </div>
                  </div>
-               </div>
-               <div class="form__group">
-                 <label for="name" class="form__title">
-                   ФАМИЛИЯ:
-                 </label>
-                 <div class="form__group--inner">
-                   <input type="text" id="name" class="form__input" name="name" placeholder="Иванов" required="" >
+                 <div class="form__group">
+                   <label for="name" class="form__title">
+                     ФАМИЛИЯ:
+                   </label>
+                   <div class="form__group--inner">
+                     <input type="text" id="name" class="form__input" name="name" placeholder="Иванов" required="" >
+                   </div>
                  </div>
-               </div>
-               <div class="form__group">
-                 <label for="name" class="form__title">
-                   Отчество:
-                 </label>
-                 <div class="form__group--inner">
-                   <input type="text" id="name" class="form__input" name="name" placeholder="Александрович" required="" >
+                 <div class="form__group">
+                   <label for="name" class="form__title">
+                     Отчество:
+                   </label>
+                   <div class="form__group--inner">
+                     <input type="text" id="name" class="form__input" name="name" placeholder="Александрович" required="" >
+                   </div>
                  </div>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset form__fieldset--line " >
+               <legend class="form__heading form__heading--legend" align="center">
+                 Контактная информация:
+               </legend>
+                <div class="form__contacts">
+                  <div class=" form__contacts--group">
+                    <label for="name" class="form__title form__title--contacts">
+                      <span class="form__title--mark">Контактный</span> телефон:
+                    </label>
+                    <div class="form__contacts--inner">
+                      <input type="text" id="name" class="form__input form__input--phone" name="name" placeholder="Введите телефон" required="" >
+                    </div>
+                  </div>
+                  <div class="form__contacts--group">
+                    <label for="name" class="form__title form__title--contacts">
+                      Электронная почта:
+                    </label>
+                    <div class="form__contacts--inner">
+                      <input type="text" id="name" class="form__input form__input--mail" name="name" placeholder="Введите e-mail" required="" >
+                    </div>
+                  </div>
+                </div>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset" >
+               <legend class="form__heading">
+                 ВАше Общее впечатление:
+               </legend>
+               <ul class="recall__items indent">
+                 <li class="recall__item">
+                   <input type="radio" class=" form__input--radio" id="positive1" name="platform" value="Скорее положительное" checked >
+                   <label for="positive1" class="recall__title">
+                     Скорее положительное
+                   </label>
+                 </li>
+                 <li class="recall__item">
+                   <input type="radio" class=" form__input--radio" id="positive2" name="platform" value="Скорее положительное" >
+                   <label for="positive2" class="recall__title">
+                     Скорее отрицательное
+                   </label>
+                 </li>
+                 <li class="recall__item">
+                   <input type="radio" class=" form__input--radio" id="positive3" name="platform" value="Скорее положительное" >
+                   <label for="positive3" class="recall__title">
+                     Затрудняюсь ответить
+                   </label>
+                 </li>
+               </ul>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset form__fieldset--line " >
+               <legend class="form__heading form__heading--legend" align="center">
+                 посещенные <span class="form__heading--decor">достопримечательности:</span>
+               </legend>
+               <ul class="lions__items indent">
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check1" name="check1"  checked >
+                   <label for="check1" class="lions__title">
+                     Мост Дьявола
+                   </label>
+                 </li>
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check2" name="check2"  checked >
+                   <label for="check2" class="lions__title">
+                     Слайд-парк
+                   </label>
+                 </li>
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check3" name="check3" >
+                   <label for="check3" class="lions__title">
+                     Гора-Колокол
+                   </label>
+                 </li>
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check4" name="check4"  checked >
+                   <label for="check4" class="lions__title">
+                     Красные скалы
+                   </label>
+                 </li>
+               </ul>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset form__fieldset--line " >
+               <legend class="form__heading form__heading--legend" align="center">
+                 Опишите свои эмоции:
+               </legend>
+               <div class="form__textarea">
+                 <textarea class="form__input form__textarea--input"  name="overview" id="overview" cols="30" rows="10"
+                 placeholder="Опишите подробно все свои восторги"></textarea>
                </div>
-           </fieldset>
-         </div>
-       </section>
-       <section class="form__section">
-         <div class="form__container">
-           <fieldset class="form__fieldset">
-             <legend class="form__heading form__heading--legend">
-               Контактная информация:
-             </legend>
-             <div class="form__group form__group-contacts">
-               <label for="name" class="form__title form__title--contacts">
-                 Контактный телефон:
-               </label>
-               <div class="form__group--inner">
-                 <input type="text" id="name" class="form__input form__input--phone" name="name" placeholder="Введите телефон" required="" >
-               </div>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <div class="form__feedback">
+               <input type="submit" class="interesting__btn" value="Отправить отзыв">
+              <span class="form__feedback--mark">* — обязательные поля</span>
              </div>
-             <div class="form__group form__group-contacts">
-               <label for="name" class="form__title form__title--contacts">
-                 Электронная почта:
-               </label>
-               <div class="form__group--inner">
-                 <input type="text" id="name" class="form__input form__input--mail" name="name" placeholder="Введите e-mail" required="" >
-               </div>
-             </div>
-           </fieldset>
-         </div>
-       </section>
-       <section class="form__section">
-         <div class="form__container">
-           <fieldset class="form__fieldset">
-             <legend class="form__heading form__heading--legend">
-               ВАше Общее впечатление:
-             </legend>
-             <ul class="recall__items">
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-             </ul>
-           </fieldset>
-         </div>
-       </section>
-       <section class="form__section">
-         <div class="form__container">
-           <fieldset class="form__fieldset">
-             <legend class="form__heading form__heading--legend">
-               ВАше Общее впечатление:
-             </legend>
-             <ul class="recall__items">
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-             </ul>
-           </fieldset>
-         </div>
-       </section>
-       <section class="form__section">
-         <div class="form__container">
-           <fieldset class="form__fieldset">
-             <legend class="form__heading form__heading--legend">
-               ВАше Общее впечатление:
-             </legend>
-             <ul class="recall__items">
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-               <li class="recall__item">
-                 <input type="radio" class=" form__input--radio" id="positive" name="platform" value="Скорее положительное" >
-                 <label for="positive" class="recall__title">
-                   Скорее положительное
-                 </label>
-               </li>
-             </ul>
-           </fieldset>
-         </div>
-       </section>
+           </div>
+         </section>
      </form>
+     </div>
     <section class="footer">
       <div class="visit">
         #visitSEDONA
@@ -235,6 +239,7 @@
         html
       </div>
     </section>
+  </div>
   <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
