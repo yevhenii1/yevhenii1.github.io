@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sedona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+  <header class="page-header">
+    <div class="page-header__container">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav--closed" type="button">
+
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item disabled"><a href="#">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="#">Форма Отзыва</a></li>
+            <li class="main-nav__item disabled"><a href="#">HTML</a></li>
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="main-nav__logo">
+                <picture>
+                  <img src="img/icons/Vector_Smart_Object.svg" alt="LOGO" width="102" heidht="84">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="intro intro-main">
+      <img src="img/icons/banner.svg" class="intro__banner" alt="LOGO" width="460" heidht="350">
+    </div>
+    <div class="intro-common">
+      <div class="intro-common__container">
+        <h2 class="intro-common__heading">
+          СЕДОНА — небольшой
+          городок в АРИЗОНЕ,
+          зАСЛУЖИвающий большего!
+        </h2>
+        <p class="intro-common__text">
+          Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+        </p>
+      </div>
+    </div>
+  </header>
+  <div class="container-form">
+     <form action="#" class="form" method="post">
+
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset">
+               <legend class="form__heading ">
+                 Представьтесь <span class="form__heading--mark">, пожалуйста</span>:
+               </legend>
+                 <div class="form__group indent">
+                   <label for="name" class="form__title">
+                     Имя:
+                   </label>
+                   <div class="form__group--inner">
+                     <input type="text" id="name" class="form__input" name="name" placeholder="Петр" required="" >
+                   </div>
+                 </div>
+                 <div class="form__group">
+                   <label for="name" class="form__title">
+                     ФАМИЛИЯ:
+                   </label>
+                   <div class="form__group--inner">
+                     <input type="text" id="name" class="form__input" name="name" placeholder="Иванов" required="" >
+                   </div>
+                 </div>
+                 <div class="form__group">
+                   <label for="name" class="form__title">
+                     Отчество:
+                   </label>
+                   <div class="form__group--inner">
+                     <input type="text" id="name" class="form__input" name="name" placeholder="Александрович" required="" >
+                   </div>
+                 </div>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset form__fieldset--line " >
+               <legend class="form__heading form__heading--legend" align="center">
+                 Контактная информация:
+               </legend>
+                <div class="form__contacts">
+                  <div class=" form__contacts--group">
+                    <label for="name" class="form__title form__title--contacts">
+                      <span class="form__title--mark">Контактный</span> телефон:
+                    </label>
+                    <div class="form__contacts--inner">
+                      <input type="text" id="name" class="form__input form__input--phone" name="name" placeholder="Введите телефон" required="" >
+                    </div>
+                  </div>
+                  <div class="form__contacts--group">
+                    <label for="name" class="form__title form__title--contacts">
+                      Электронная почта:
+                    </label>
+                    <div class="form__contacts--inner">
+                      <input type="text" id="name" class="form__input form__input--mail" name="name" placeholder="Введите e-mail" required="" >
+                    </div>
+                  </div>
+                </div>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset" >
+               <legend class="form__heading">
+                 ВАше Общее впечатление:
+               </legend>
+               <ul class="recall__items indent">
+                 <li class="recall__item">
+                   <input type="radio" class=" form__input--radio" id="positive1" name="platform" value="Скорее положительное" checked >
+                   <label for="positive1" class="recall__title">
+                     Скорее положительное
+                   </label>
+                 </li>
+                 <li class="recall__item">
+                   <input type="radio" class=" form__input--radio" id="positive2" name="platform" value="Скорее положительное" >
+                   <label for="positive2" class="recall__title">
+                     Скорее отрицательное
+                   </label>
+                 </li>
+                 <li class="recall__item">
+                   <input type="radio" class=" form__input--radio" id="positive3" name="platform" value="Скорее положительное" >
+                   <label for="positive3" class="recall__title">
+                     Затрудняюсь ответить
+                   </label>
+                 </li>
+               </ul>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset form__fieldset--line " >
+               <legend class="form__heading form__heading--legend" align="center">
+                 посещенные <span class="form__heading--decor">достопримечательности:</span>
+               </legend>
+               <ul class="lions__items indent">
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check1" name="check1"  checked >
+                   <label for="check1" class="lions__title">
+                     Мост Дьявола
+                   </label>
+                 </li>
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check2" name="check2"  checked >
+                   <label for="check2" class="lions__title">
+                     Слайд-парк
+                   </label>
+                 </li>
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check3" name="check3" >
+                   <label for="check3" class="lions__title">
+                     Гора-Колокол
+                   </label>
+                 </li>
+                 <li class="lions__item">
+                   <input type="checkbox" class=" form__input--checkbox" id="check4" name="check4"  checked >
+                   <label for="check4" class="lions__title">
+                     Красные скалы
+                   </label>
+                 </li>
+               </ul>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <fieldset class="form__fieldset form__fieldset--line " >
+               <legend class="form__heading form__heading--legend" align="center">
+                 Опишите свои эмоции:
+               </legend>
+               <div class="form__textarea">
+                 <textarea class="form__input form__textarea--input"  name="overview" id="overview" cols="30" rows="10"
+                 placeholder="Опишите подробно все свои восторги"></textarea>
+               </div>
+             </fieldset>
+           </div>
+         </section>
+         <section class="form__section">
+           <div class="form__container">
+             <div class="form__feedback">
+               <input type="submit" class="interesting__btn" value="Отправить отзыв">
+              <span class="form__feedback--mark">* — обязательные поля</span>
+             </div>
+           </div>
+         </section>
+     </form>
+     </div>
+    <section class="footer">
+      <div class="visit">
+        #visitSEDONA
+      </div>
+      <ul class="social">
+        <li class="social__icon"><a href="#">
+          <svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="8.672px" height="18.943px" viewBox="0 0 8.672 18.943" enable-background="new 0 0 8.672 18.943" xml:space="preserve">
+          <path d="M6.275,3.356c0.799,0,1.599,0,2.397,0c0-1.119,0-2.236,0-3.355c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115
+          	H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.856V6.115H5.787
+          	C5.766,5.069,5.75,3.709,6.275,3.356z"/>
+          </svg>
+        </a></li>
+        <li class="social__icon"><a href="#">
+          <svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="17.5px" height="14.664px" viewBox="0 0 17.5 14.664" enable-background="new 0 0 17.5 14.664" xml:space="preserve">
+          <g id="W6EeEF_1_">
+          	<g>
+          		<path d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15c0.694-0.225,1.372-0.47,2.072-0.69
+          			c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86c-0.175,0.977-1.035,1.746-1.611,1.977
+          			C15.65,10.429,12.617,14.792,5.507,14.66c-0.538,0,0.077,0-0.46,0c-0.422,0-4.29-0.449-5.047-1.843
+          			c2.341,0.192,4.011-0.412,4.835-1.149c-0.989-0.293-2.761-0.465-3.07-2.881c0.362,0.104,0.583,0.223,1.228,0.116
+          			C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461c-0.725-0.235-2.03-3.281-0.921-4.836
+          			C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+          	</g>
+          </g>
+          </svg>
+        </a></li>
+        <li class="social__icon"><a href="#">
+          <svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="19.979px" height="14.016px" viewBox="0 0 19.979 14.016" enable-background="new 0 0 19.979 14.016" xml:space="preserve">
+          <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.346c0,1.56,1.274,2.835,2.835,2.835h14.31c1.561,0,2.835-1.275,2.835-2.835
+          	V2.835C19.979,1.275,18.704,0,17.145,0z M7.036,10.392v-6.77l6.769,3.384L7.036,10.392z"/>
+          </svg>
+        </a></li>
+      </ul>
+      <div class="ht">
+        html
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
