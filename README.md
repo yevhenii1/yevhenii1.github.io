@@ -8,3 +8,7 @@ https://yevhenii1.github.io/site_sedonai/
 https://yevhenii1.github.io/sitefirshi/
 
 
+<h2>Api Weather</h2>
+https://yevhenii1.github.io/Weather/
+
+
