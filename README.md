@@ -9,7 +9,7 @@ https://yevhenii1.github.io/sitefirshh/
 
 
 <h2>Api Weather</h2>
-https://yevhenii1.github.io/Weather/
+https://yevhenii1.github.io/Weather1/
 
 
 
