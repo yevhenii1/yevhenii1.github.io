@@ -1,5 +1,5 @@
 # yevhenii1.github.io
-Project
+Project file
 
 <h2>sedona</h2>
 https://yevhenii1.github.io/site_sedonaa/
