@@ -5,7 +5,7 @@ Project file
 https://yevhenii1.github.io/sedona/
 
 <h2>sitefirsh</h2>
-https://yevhenii1.github.io/sitefirshh/
+https://yevhenii1.github.io/jon/
 
 
 
