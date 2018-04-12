@@ -2,14 +2,13 @@
 Project file
 
 <h2>sedona</h2>
-https://yevhenii1.github.io/site_sedonaa/
+https://yevhenii1.github.io/sedona/
 
 <h2>sitefirsh</h2>
 https://yevhenii1.github.io/sitefirshh/
 
 
-<h2>Api Weather</h2>
-https://yevhenii1.github.io/weather/
+
 
 
 
