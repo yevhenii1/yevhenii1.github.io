@@ -33,7 +33,6 @@ $('.nameCancel').click(function () {
   $('.popup-name').removeClass('popup-show')
 });
 
-
 // Tabs //
 
 $(function() {
@@ -46,11 +45,7 @@ $(function() {
       });
     });
   });
-
 })
-
-
-
 $(function() {
 
   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
@@ -58,5 +53,4 @@ $(function() {
       .addClass('active').siblings().removeClass('active')
       .closest('div.tabs').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
   });
-
 });

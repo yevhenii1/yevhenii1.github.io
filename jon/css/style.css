@@ -60,38 +60,6 @@ p {
     line-height: 25px;
     font-family: "OpenSansRegular";
     color: #333333; }
-  .login-content--close {
-    width: 15px;
-    height: 20px;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background: transparent;
-    position: absolute;
-    top: 68px;
-    right: 25px; }
-    .login-content--close::before {
-      content: '';
-      position: absolute;
-      width: 19px;
-      height: 3px;
-      background-color: #a8b8c4;
-      border-radius: 1px;
-      left: 0px;
-      top: 9px;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
-    .login-content--close::after {
-      content: '';
-      position: absolute;
-      width: 19px;
-      height: 3px;
-      background-color: #a8b8c4;
-      border-radius: 1px;
-      left: 0px;
-      top: 9px;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
   .login-content--show {
     display: block; }
 
