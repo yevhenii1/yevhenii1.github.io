@@ -591,13 +591,14 @@ a:focus {
   display: block;
 }
 .blog__desc span i {
-  padding-right: 15px;
-}
-.blog__desc span time {
-  padding-right: 27px;
+  padding-right: 10px;
 }
 .blog__desc span b {
+  padding-right: 20px;
   font-weight: normal;
+}
+.blog__desc span b:last-child {
+  padding-right: 0;
 }
 .blog__desc p {
   font-size: 15px;
@@ -723,7 +724,6 @@ a:focus {
     display: -ms-flex;
     display: flex;
     justify-content: center;
-    padding-bottom: 120px;
   }
   .portfolio__list {
     margin-right: 20px;
@@ -765,8 +765,14 @@ a:focus {
   .blog__desc span {
     padding-bottom: 20px;
   }
-  .blog__desc span time {
+  .blog__desc span i {
+    padding-right: 15px;
+  }
+  .blog__desc span b {
     padding-right: 40px;
+  }
+  .blog__desc span b:last-child {
+    padding-right: 0;
   }
   .blog__desc p {
     text-align: left;
@@ -885,6 +891,9 @@ a:focus {
   }
   .portfolio {
     padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .portfolio__lists {
     padding-bottom: 120px;
   }
   .pricing {
