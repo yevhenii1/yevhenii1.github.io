@@ -169,7 +169,7 @@ a:focus {
 }
 .banner {
   text-align: center;
-  background: url(../img/pexels-photo-356056.jpg);
+  background-image: url(../img/bg-banner1.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -378,8 +378,14 @@ a:focus {
 .portfolio__btn:hover {
   background-color: #008959;
 }
-.item {
-  height: 300px;
+.masonry-container {
+  padding: 0;
+}
+.itemq {
+  height: 44.34vh;
+}
+.itemq img {
+  width: 100%;
 }
 .mix {
   display: none;
@@ -742,8 +748,11 @@ a:focus {
   .portfolio__btn {
     margin-top: 120px;
   }
+  .itemq {
+    height: 33.34vh;
+  }
   .mix {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   .team__item img {
     width: 230px;
@@ -840,6 +849,9 @@ a:focus {
     font-size: 20px;
   }
   .main-nav__item a:hover {
+    color: #00897b;
+  }
+  .main-nav__item--active a {
     color: #00897b;
   }
   .header__container {

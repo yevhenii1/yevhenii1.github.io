@@ -20,9 +20,16 @@ $(function(){
      }
    });
 
-   });
+});
 
-$(".item").imagefill();
+var $container = $(".masonry-container");
+$container.imagesLoaded(function () {
+  $container.masonry({
+    columnWidth: ".item",
+    itemSelector: ".item"
+  });
+  $(".itemq").imagefill();
+});
 
 var slideIndex=1;
 showSlides(slideIndex);
@@ -54,19 +61,6 @@ function showSlides(n) {
   dots[slideIndex-1].className+= " slider-pagination__control--active";
 }
 
-
-  // $.scrollUp({
-  //     scrollName: 'scrollUp',      // Element ID
-  //     scrollDistance: 300,         // Distance from top/bottom before showing element (px)
-  //     scrollFrom: 'top',           // 'top' or 'bottom'
-  //     scrollSpeed: 1000,            // Speed back to top (ms)
-  //     easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
-  //     animation: 'fade',           // Fade, slide, none
-  //     animationSpeed: 300,         // Animation speed (ms)
-  //     scrollText: '', // Text for element, can contain HTML
-  //     scrollImg: true            // Set true to use image
-  // });
-
  $(document).ready(function(){
  	$(".main-nav__lists").on("click","a", function (event) {
  		//отменяем стандартную обработку нажатия по ссылке
@@ -82,3 +76,20 @@ function showSlides(n) {
  		$('body,html').animate({scrollTop: top}, 1500);
  	});
  });
+
+ $("body .main-nav__item").click(function() {
+
+   $("body .main-nav__item").removeClass("main-nav__item--active");
+
+   $(this).addClass("main-nav__item--active");
+
+ });
+$(document).ready(function() {
+  $(".banner--bg h3").animated("rubberBand", "fadeOutDown");
+  $(".banner--bg span").animated("rubberBand", "fadeOutDown");
+
+  $(".animated-1").animated("bounceInUp", "fadeOutDown");
+  $(".text").animated("bounceInUp", "fadeOutDown");
+  $(".about__icon").animated("zoomIn", "fadeOutDown");
+
+});
