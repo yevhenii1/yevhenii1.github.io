@@ -4,8 +4,8 @@ Project file
 <h2>sedona</h2>
 https://yevhenii1.github.io/sedona/
 
-<h2>sitefirsh</h2>
-https://yevhenii1.github.io/jon/
+<h2>kappe</h2>
+https://yevhenii1.github.io/kappe/
 
 <h2>project</h2>
 https://yevhenii1.github.io/project/
