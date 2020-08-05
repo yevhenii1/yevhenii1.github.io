@@ -163,9 +163,10 @@
         </div>
     </div>
 </div>
-        <div class="text-block">
+        <div class="text-block" id="textBlock" data-midnight="black">
     <div class="text-block__container d-flex">
-        <div class="text-block__header">
+        <div class="text-block__header" id="sticky">
+            <div class="sticky-anchor"></div>
             <div class="text-block__header-image">
                 <img src="img/logo_colored1.png" alt="alt">
                 <h3>Мысли Криса Койера</h3>
@@ -222,7 +223,7 @@
         </div>
     </div>
 </div>
-        <div class="services">
+        <div class="services" data-midnight="black">
     <div class="services__container d-flex">
         <div class="services__item">
             <div class="services__item-image">
@@ -264,7 +265,7 @@
         </div>
     </div>
 </div>
-        <div class="posters">
+        <div class="posters" data-midnight="black">
     <div class="posters__container">
         <section class="posters__section">
             <h1>Frontend-разработчик должен разбираться в производительности</h1>
@@ -295,7 +296,7 @@
         </section>
     </div>
 </div>
-        <div class="contacts">
+        <div class="contacts" data-midnight="default">
     <div class="contacts__container">
         <div class="contacts__info">
             <b>контакты</b>
@@ -329,7 +330,7 @@
 
 
 
-        <div class="footer">
+        <div class="footer" data-midnight="black">
     <div class="footer__wrapper">
         <div class="footer__logo">
             <img src="img/logo_colored1.png" alt="alt">
@@ -346,19 +347,84 @@
         © 2017 «Frontend» |  сайт разработан в <a href="#"> Rubarb digital</a>   
     </div>
 </div>
-        <div class="social">
-            <ul class="d-flex">
-                <li><span>Share</span></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            </ul>
+        <div class="fixed-bg">
+            <div class="social">
+                <ul class="d-flex">
+                    <li><span>Share</span></li>
+                    <li ><a class="social__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li ><a class="social__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
     <script>
         objectFitImages();
+
+
+
+        $(document).ready(function () {
+            // Change this to the correct selector for your nav.
+            $('.fixed-bg').midnight();
+            $('.fixed-bg').css("bottom", "20px");
+            $('.fixed-bg').css("right", "30px");
+            $('.fixed-bg').css("top", "auto");
+            $('.fixed-bg').css("left", "auto");
+            $('.fixed-bg').css("width", "50px");
+            $('.fixed-bg').css("z-index", "1000");
+
+
+            var StickyElement = function (node) {
+                // debugger
+                var doc = $(document),
+                    fixed = false,
+                    anchor = node.find('.sticky-anchor'),
+                    content = node.find('.text-block__header-image');
+
+                var onScroll = function (e) {
+                    // debugger
+                    var docTop = doc.scrollTop(),
+                        anchorTop = anchor.offset().top;
+
+                    // console.log('scroll', docTop, anchorTop);
+                    if (docTop > anchorTop) {
+                        if (!fixed) {
+                            anchor.height(content.outerHeight());
+                            content.addClass('fixed');
+                            fixed = true;
+                        }
+                    } else {
+                        if (fixed) {
+                            anchor.height(0);
+                            content.removeClass('fixed');
+                            content.css("bottom", "unset");
+                            fixed = false;
+                        }
+                    }
+                    if (docTop > 1900) {
+                        if (fixed) {
+                            content.removeClass('fixed');
+                            content.css("bottom", "120px");
+                            fixed = false;
+                        }
+                    }
+                };
+
+                $(window).on('scroll', onScroll);
+            };
+
+            var demo = new StickyElement($('#sticky'));
+
+        });
+
 
 
 
@@ -367,6 +433,7 @@
 
 
     <script src="js/main.js"></script>
+
     <!-- <script src="../js/main/bacg.js"></script>
     <script>
      

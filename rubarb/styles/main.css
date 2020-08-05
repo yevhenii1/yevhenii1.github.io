@@ -577,9 +577,7 @@ img {
 }
 
 .social {
-  position: fixed;
-  right: 30px;
-  bottom: 20px;
+  display: flex;
 }
 
 .social ul {
@@ -591,7 +589,13 @@ img {
   margin-bottom: 10px;
 }
 
-.social ul li a {
+.social ul span {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: tb-rl;
+  text-transform: uppercase;
+}
+
+.social__link {
   width: 44px;
   height: 44px;
   border: 1px solid #fff;
@@ -599,24 +603,27 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
-.social ul li a .background--light {
-  color: black;
+.midnightHeader.default {
+  color: #fff;
 }
 
-.social ul li a .background--dark {
-  color: white;
+.midnightHeader.default a {
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-.social ul li a .background--complex {
-  color: gray;
+.midnightHeader.black {
+  /* background: white; */
+  color: #c3c2c7;
 }
 
-.social ul span {
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: tb-rl;
-  text-transform: uppercase;
+.midnightHeader.black a {
+  color: #fff;
+  border: 1px solid #c3c2c7;
+  background-color: #c3c2c7;
 }
 
 .container {
@@ -1048,8 +1055,8 @@ a:hover {
 
 .text-block {
   position: relative;
-  margin-top: 140px;
-  margin-bottom: 110px;
+  padding-top: 140px;
+  padding-bottom: 110px;
 }
 
 .text-block__container {
@@ -1065,9 +1072,7 @@ a:hover {
 }
 
 .text-block__header-image {
-  position: fixed;
-  top: 100px;
-  z-index: -10;
+  position: absolute;
 }
 
 .text-block__header-image h3 {
@@ -1185,6 +1190,11 @@ a:hover {
   text-align: center;
   position: relative;
   margin: auto;
+}
+
+.text-block__header-image.fixed {
+  position: fixed;
+  top: 20px;
 }
 
 .services {
@@ -1739,11 +1749,11 @@ a:hover {
   }
 
   .text-block {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   .text-block {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .text-block__container {
@@ -1792,6 +1802,14 @@ a:hover {
 
   .text-block__btn button {
     font-size: 20px;
+  }
+
+  .text-block__header-image.fixed {
+    position: static;
+  }
+
+  .sticky-anchor {
+    display: none;
   }
 
   .services__container {

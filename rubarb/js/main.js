@@ -230,6 +230,17 @@ theToggle.onclick = function () {
 
 /***/ }),
 
+/***/ "./src/blocks/textBlock/textBlock.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/textBlock/textBlock.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -243,6 +254,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _blocks_banner_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../blocks/banner/banner */ "./src/blocks/banner/banner.js");
 /* harmony import */ var _blocks_banner_banner__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_banner_banner__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _blocks_textBlock_textBlock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../blocks/textBlock/textBlock */ "./src/blocks/textBlock/textBlock.js");
+/* harmony import */ var _blocks_textBlock_textBlock__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_textBlock_textBlock__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
