@@ -3,7 +3,8 @@
 https://yevhenii1.github.io/rubarb/
 <h2>decoblog</h2>
 https://yevhenii1.github.io/decoblog/
-<h2>multipurpose</h2>
+<h2>mercedes-Benz</h2>
+https://yevhenii1.github.io/mercedesBenz/
 <h2>iddo</h2>
 https://yevhenii1.github.io/iddo/
 <h2>multipurpose</h2>
