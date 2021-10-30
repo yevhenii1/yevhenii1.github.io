@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: fixed;
   top: 70px;
-  right: 48px;
+  right: 72px;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -481,6 +481,12 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   display: none;
   transition: 0.5s;
+}
+@media (max-width: 480px) {
+  .header .menu__btn-mob {
+    top: 55px;
+    right: 60px;
+  }
 }
 .header .menu__btn-mob:before, .header .menu__btn-mob:after {
   content: "";
@@ -763,22 +769,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .banner .banner-items-desc__item:nth-child(1) {
   top: 0;
-  -webkit-animation: spinHorizontal-1 normal forwards;
-  animation: spinHorizontal-1 normal forwards;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation: spinHorizontal-1 normal forwards ease-in-out;
+  animation: spinHorizontal-1 normal forwards ease-in-out;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+@media (max-width: 1024px) {
+  .header .banner .banner-items-desc__item:nth-child(1) {
+    -webkit-animation: spinHorizontal-1-1024 normal forwards ease-in-out;
+    animation: spinHorizontal-1-1024 normal forwards ease-in-out;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  }
 }
 .header .banner .banner-items-desc__item:nth-child(2) {
   top: 100px;
   left: 400px;
   -webkit-animation: spinHorizontal-2 normal forwards ease-in-out;
   animation: spinHorizontal-2 normal forwards ease-in-out;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
 }
 @media (max-width: 1024px) {
   .header .banner .banner-items-desc__item:nth-child(2) {
     top: 78px;
+    -webkit-animation: spinHorizontal-2-1024 normal forwards ease-in-out;
+    animation: spinHorizontal-2-1024 normal forwards ease-in-out;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
   }
 }
 .header .banner .banner-items-desc__item:nth-child(3) {
@@ -786,12 +804,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 600px;
   -webkit-animation: spinHorizontal-3 normal forwards ease-in-out;
   animation: spinHorizontal-3 normal forwards ease-in-out;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
 }
 @media (max-width: 1024px) {
   .header .banner .banner-items-desc__item:nth-child(3) {
     top: 156px;
+    -webkit-animation: spinHorizontal-3-1024 normal forwards ease-in-out;
+    animation: spinHorizontal-3-1024 normal forwards ease-in-out;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
   }
 }
 .header .banner .banner-items-desc__item:nth-child(4) {
@@ -799,12 +821,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 500px;
   -webkit-animation: spinHorizontal-4 normal forwards ease-in-out;
   animation: spinHorizontal-4 normal forwards ease-in-out;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
 }
 @media (max-width: 1024px) {
   .header .banner .banner-items-desc__item:nth-child(4) {
     top: 235px;
+    -webkit-animation: spinHorizontal-4-1024 normal forwards ease-in-out;
+    animation: spinHorizontal-4-1024 normal forwards ease-in-out;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
   }
 }
 .header .banner .banner-items-desc__item:nth-child(5) {
@@ -812,12 +838,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 200px;
   -webkit-animation: spinHorizontal-5 normal forwards ease-in-out;
   animation: spinHorizontal-5 normal forwards ease-in-out;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
 }
 @media (max-width: 1024px) {
   .header .banner .banner-items-desc__item:nth-child(5) {
     top: 312px;
+    -webkit-animation: spinHorizontal-5-1024 normal forwards ease-in-out;
+    animation: spinHorizontal-5-1024 normal forwards ease-in-out;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
   }
 }
 @media (max-width: 1024px) {
@@ -882,17 +912,35 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transition: all 1s ease-in;
 }
+.header .banner__svg-top .mob-icons__item:nth-child(1) {
+  -webkit-animation: spinHorizontal-mob-1 normal forwards ease-in-out;
+  animation: spinHorizontal-mob-1 normal forwards ease-in-out;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
 @media (max-width: 580px) {
   .header .banner__svg-top .mob-icons__item:nth-child(1) {
+    -webkit-animation: spinHorizontal-mob-1-580 normal forwards ease-in-out;
+    animation: spinHorizontal-mob-1-580 normal forwards ease-in-out;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     left: -100px;
   }
 }
 .header .banner__svg-top .mob-icons__item:nth-child(2) {
   top: 110px;
+  -webkit-animation: spinHorizontal-mob-2 normal forwards ease-in-out;
+  animation: spinHorizontal-mob-2 normal forwards ease-in-out;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 @media (max-width: 580px) {
   .header .banner__svg-top .mob-icons__item:nth-child(2) {
     top: 57px;
+    -webkit-animation: spinHorizontal-mob-2-580 normal forwards ease-in-out;
+    animation: spinHorizontal-mob-2-580 normal forwards ease-in-out;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
   }
 }
 .header .banner__svg-top .mob-icons__item img {
