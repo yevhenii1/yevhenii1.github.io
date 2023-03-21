@@ -1,6 +1,5 @@
 # DEMO
-<h2>neon</h2>
-https://yevhenii1.github.io/neon/
+
 <h2>tinder</h2>
 https://yevhenii1.github.io/tinder/
 <h2>rubarb</h2>
@@ -21,10 +20,3 @@ https://yevhenii1.github.io/project/
 https://yevhenii1.github.io/sedona/
 <h2>kappe</h2>
 https://yevhenii1.github.io/kappe/
-
-
-
-
-
-
-
